@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Sample API",
+    "title": "Sample API (Works)",
     "version": "1.0.0",
     "description": "API description",
     "contact": {
@@ -25,7 +25,8 @@
       "get": {
         "operationId": "getUsers",
         "description": "Retrieve all users",
-        "tags": ["accounts"],  // ❌ Not defined in root tags
+        "summary": "This is a summary",
+        "tags": ["accounts"], 
         "responses": {
           "200": {
             "description": "OK"
