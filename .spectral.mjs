@@ -1,4 +1,4 @@
- export default {                                                                                   
+export default {                                                                                   
     rules: {                                                                                       
       'get-summary': {                                                                               
         message: 'GET operation must include a summary',                                             
@@ -7,4 +7,4 @@
         then: { field: 'summary', function: 'truthy' },                                              
       },                                                                                             
     },                                                                                               
-  }; 
+}; 
