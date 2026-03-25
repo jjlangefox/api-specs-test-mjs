@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Sample API (Works)",
+    "title": "Sample API (Fails)",
     "version": "1.0.0",
     "description": "API description",
     "contact": {
