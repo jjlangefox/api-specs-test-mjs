@@ -1,0 +1,24 @@
+# .spectral.yml
+extends:
+  - 'spectral:oas'   # Use the standard OpenAPI rules
+
+rules:
+  info-contact-name:
+    description: "The contact name must be provided in the OpenAPI info section."
+    message: "info.contact.name is required."
+    given: "$.info.contact.name"
+    severity: error
+    then:
+      function: truthy
+
+  operation-id-case:
+    description: "Operation IDs should be camelCase."
+    message: "operationId should be camelCase."
+    given: "$.paths[*][*].operationId"
+    severity: warning
+    then:
+      function: pattern
+      functionOptions:
+        match: "^[a-z][a-zA-Z0-9]*$"
+
+  # Add more custom rules here
